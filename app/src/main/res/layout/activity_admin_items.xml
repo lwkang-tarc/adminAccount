@@ -859,13 +859,24 @@
     </ScrollView>
 
     <ImageButton
+        android:id="@+id/adminTaskBtn2"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#8CF127"
+        android:contentDescription="@string/admin_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/adminHomeBtn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/task2" />
+
+    <ImageButton
         android:id="@+id/adminHomeBtn2"
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="#8CF127"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/adminItemsBtn2"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/adminTaskBtn2"
         app:srcCompat="@drawable/home_btn" />
 
     <ImageButton

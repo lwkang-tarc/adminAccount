@@ -33,13 +33,24 @@
         app:srcCompat="@drawable/profilelogo" />
 
     <ImageButton
+        android:id="@+id/chickenTaskBtn"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#8CF127"
+        android:contentDescription="@string/admin_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chickenHomeBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/task2" />
+
+    <ImageButton
         android:id="@+id/chickenHomeBtn"
         android:layout_height="75dp"
         android:layout_width="0dp"
         android:background="#8CF127"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/chickenItemsBtn"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/chickenTaskBtn"
         app:srcCompat="@drawable/home_btn" />
 
     <ImageButton

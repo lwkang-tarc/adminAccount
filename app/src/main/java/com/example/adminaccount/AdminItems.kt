@@ -29,6 +29,12 @@ class AdminItems : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val adminTaskBtn: ImageButton = findViewById(R.id.adminTaskBtn2)
+        adminTaskBtn.setOnClickListener {
+            val intent = Intent(this, OrderList::class.java )
+            startActivity(intent)
+        }
+
         val allVegeBtn: Button = findViewById(R.id.allVege)
         allVegeBtn.setOnClickListener {
             val intent = Intent(this, AllVegetables::class.java )

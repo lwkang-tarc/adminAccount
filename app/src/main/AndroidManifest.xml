@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.adminaccount">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,7 +11,8 @@
         android:roundIcon="@drawable/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.AdminAccount">
-        <activity android:name=".AllSeafoods"></activity>
+        <activity android:name=".OrderList"></activity>
+        <activity android:name=".AllSeafoods" />
         <activity android:name=".AllEggs" />
         <activity android:name=".AllChickens" />
         <activity android:name=".AllFruits" />

@@ -33,13 +33,24 @@
         app:srcCompat="@drawable/profilelogo" />
 
     <ImageButton
+        android:id="@+id/vegeTaskBtn"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#8CF127"
+        android:contentDescription="@string/admin_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/vegeHomeBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/task2" />
+
+    <ImageButton
         android:id="@+id/vegeHomeBtn"
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="#8CF127"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/vegeItemsBtn"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/vegeTaskBtn"
         app:srcCompat="@drawable/home_btn" />
 
     <ImageButton

@@ -24,6 +24,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val adminTaskBtn: ImageButton = findViewById(R.id.adminTaskBtn1)
+        adminTaskBtn.setOnClickListener {
+            val intent = Intent(this, OrderList::class.java )
+            startActivity(intent)
+        }
+
 
     }
 }

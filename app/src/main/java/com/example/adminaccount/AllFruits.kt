@@ -29,6 +29,13 @@ class AllFruits : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val adminTaskBtn: ImageButton = findViewById(R.id.fruitTaskBtn)
+        adminTaskBtn.setOnClickListener {
+            val intent = Intent(this, OrderList::class.java )
+            startActivity(intent)
+        }
+
+
         val languages = resources.getStringArray(R.array.Languages)
         // access the spinner
         val spinner = findViewById<Spinner>(R.id.spinner)

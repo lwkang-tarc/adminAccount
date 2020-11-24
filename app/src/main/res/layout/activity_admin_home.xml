@@ -27,13 +27,24 @@
         app:srcCompat="@drawable/icon" />
 
     <ImageButton
+        android:id="@+id/adminTaskBtn3"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#8CF127"
+        android:contentDescription="@string/admin_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/adminHomeBtn3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/task2" />
+
+    <ImageButton
         android:id="@+id/adminHomeBtn3"
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="#8CF127"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/adminItemsBtn3"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/adminTaskBtn3"
         app:srcCompat="@drawable/home_btn" />
 
     <ImageButton

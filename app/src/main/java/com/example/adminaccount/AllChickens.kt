@@ -28,6 +28,11 @@ class AllChickens : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java )
             startActivity(intent)
         }
+        val adminTaskBtn: ImageButton = findViewById(R.id.chickenTaskBtn)
+        adminTaskBtn.setOnClickListener {
+            val intent = Intent(this, OrderList::class.java )
+            startActivity(intent)
+        }
 
         val languages = resources.getStringArray(R.array.Languages)
         // access the spinner

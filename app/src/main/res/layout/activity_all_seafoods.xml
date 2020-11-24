@@ -33,13 +33,24 @@
         app:srcCompat="@drawable/profilelogo" />
 
     <ImageButton
+        android:id="@+id/seaTaskBtn"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#8CF127"
+        android:contentDescription="@string/admin_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/seaHomeBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/task2" />
+
+    <ImageButton
         android:id="@+id/seaHomeBtn"
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="#8CF127"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/seaItemsBtn"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/seaTaskBtn"
         app:srcCompat="@drawable/home_btn" />
 
     <ImageButton
