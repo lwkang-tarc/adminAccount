@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Admin account</string>
+    <string name="change_icon">Change Icon</string>
+    <string name="log_out">Log Out</string>
+    <string name="admin_home">TODO</string>
+    <string name="admin_items">TODO</string>
+    <string name="fruitadd">FruitAdd</string>
+
+
+    <string name="selected_item">Selected Category:</string>
+    <string-array name="Languages">
+        <item>Tap To Select</item>
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Chickens</item>
+        <item>Eggs</item>
+        <item>Seafoods</item>
+    </string-array>
+</resources>

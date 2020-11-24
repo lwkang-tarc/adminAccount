@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:verticalScrollbarPosition="defaultPosition"
+    tools:context=".AdminHome">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:contentDescription="TODO"
+        android:foreground="@drawable/headerbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:contentDescription="TODO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <ImageButton
+        android:id="@+id/adminHomeBtn3"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#8CF127"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/adminItemsBtn3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_btn" />
+
+    <ImageButton
+        android:id="@+id/adminItemsBtn3"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#8CF127"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/adminHomeBtn3"
+        app:srcCompat="@drawable/allitem_btn" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/adminHomeBtn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/recommender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Recommended Product"
+                android:textAlignment="textStart"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/babyYam"
+                    android:layout_width="180dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#000000"
+                    android:foreground="@drawable/_"
+                    android:tint="#000000"
+                    android:verticalScrollbarPosition="defaultPosition" />
+
+
+                <Button
+                    android:id="@+id/changeItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#EA0000"
+                    android:text="Change Item" />
+
+                <TextView
+                    android:id="@+id/babyYamTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Baby Yam (±500g)\nRM3.80"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="18sp"
+                    android:verticalScrollbarPosition="defaultPosition" />
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#0000FF04"
+                    android:checked="true"
+                    android:text="In Stock"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textOff="Out Of Stock"
+                    android:textOn="On Stock"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#03FF1C"
+                    android:drawableEnd="@android:drawable/presence_busy"
+                    android:text="Baby Yam (±500g)"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/rec2"
+                    android:layout_width="180dp"
+                    android:layout_height="170dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#000000"
+                    android:foreground="@drawable/_"
+                    android:tint="#000000"
+                    android:verticalScrollbarPosition="defaultPosition" />
+
+
+                <Button
+                    android:id="@+id/changeItem2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#EA0000"
+                    android:text="Change Item" />
+
+                <TextView
+                    android:id="@+id/rec2Txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Baby Yam (±500g)\nRM3.80"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="18sp"
+                    android:verticalScrollbarPosition="defaultPosition" />
+
+                <Switch
+                    android:id="@+id/switch2"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#0000FF04"
+                    android:checked="true"
+                    android:text="In Stock"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textOff="Out Of Stock"
+                    android:textOn="On Stock"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/remove2"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#03FF1C"
+                    android:drawableEnd="@android:drawable/presence_busy"
+                    android:text="Baby Yam (±500g)"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frame3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/rec3"
+                    android:layout_width="190dp"
+                    android:layout_height="179dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#000000"
+                    android:foreground="@drawable/_"
+                    android:tint="#000000"
+                    android:verticalScrollbarPosition="defaultPosition" />
+
+
+                <Button
+                    android:id="@+id/changeItem3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#EA0000"
+                    android:text="Change Item" />
+
+                <TextView
+                    android:id="@+id/rec3Txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Baby Yam (±500g)\nRM3.80"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#000000"
+                    android:textColorHint="#FFFFFF"
+                    android:textSize="18sp"
+                    android:verticalScrollbarPosition="defaultPosition" />
+
+                <Switch
+                    android:id="@+id/switch3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#0000FF04"
+                    android:checked="true"
+                    android:text="In Stock"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textOff="Out Of Stock"
+                    android:textOn="On Stock"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/remove3"
+                    android:layout_width="395dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="#03FF1C"
+                    android:drawableEnd="@android:drawable/presence_busy"
+                    android:text="Baby Yam (±500g)"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/adminProfileBtn3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profilelogo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

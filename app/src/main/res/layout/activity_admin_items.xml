@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminItems">
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:foreground="@drawable/headerbackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <ImageButton
+        android:id="@+id/adminProfileBtn2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profilelogo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/adminHomeBtn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/vegetable"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Vegetables"
+                    android:textAlignment="textStart"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/addVegetable"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="340dp"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="vegeAdd"
+                    app:srcCompat="@drawable/addnewitem" />
+            </FrameLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/babyYam"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@drawable/_"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/babyYamTxt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="Baby Yam (±500g)\nRM3.80"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/vege1"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/vege1Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege1"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/vege2"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/vege2Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege2"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/vege3"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/vege3Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege2"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/allVege"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000091EA"
+                android:drawableStart="@android:drawable/ic_menu_view"
+                android:drawableEnd="@android:drawable/ic_menu_view"
+                android:shadowColor="#00B8D4"
+                android:text="View All Vegetables"
+                android:textColor="#2962FF" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/fruit"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Fruits"
+                    android:textAlignment="textStart"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/addFruit"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="340dp"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="fruitAdd"
+                    app:srcCompat="@drawable/addnewitem" />
+            </FrameLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/fruit0"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@drawable/_"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/fruit0Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="Baby Yam (±500g)      RM3.80"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/fruit1"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/fruit1Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege1"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/fruit2"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/fruit2Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege2"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/fruit3"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/fruit3Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege2"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/allFruit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000091EA"
+                android:drawableStart="@android:drawable/ic_menu_view"
+                android:drawableEnd="@android:drawable/ic_menu_view"
+                android:shadowColor="#00B8D4"
+                android:text="View All Fruits"
+                android:textColor="#2962FF" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/chicken"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Chicken"
+                    android:textAlignment="textStart"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/addChicken"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="340dp"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="chickenAdd"
+                    app:srcCompat="@drawable/addnewitem" />
+            </FrameLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/chicken0"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@drawable/_"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/chicken0Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="Baby Yam (±500g)      RM3.80"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/chicken1"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/chicken1Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege1"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/chicken2"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/chicken2Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege2"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/chicken3"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/chicken3Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege2"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/allChicken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000091EA"
+                android:drawableStart="@android:drawable/ic_menu_view"
+                android:drawableEnd="@android:drawable/ic_menu_view"
+                android:shadowColor="#00B8D4"
+                android:text="View All Chickens"
+                android:textColor="#2962FF" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/egg"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Eggs"
+                    android:textAlignment="textStart"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/addEgg"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="340dp"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="eggAdd"
+                    app:srcCompat="@drawable/addnewitem" />
+            </FrameLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/egg0"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@drawable/_"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/egg0Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="Baby Yam (±500g)      RM3.80"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/egg1"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/egg1Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege1"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/egg2"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/egg2Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege2"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/egg3"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/egg3Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege2"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/allEgg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000091EA"
+                android:drawableStart="@android:drawable/ic_menu_view"
+                android:drawableEnd="@android:drawable/ic_menu_view"
+                android:shadowColor="#00B8D4"
+                android:text="View All Eggs"
+                android:textColor="#2962FF" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/seafood"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:text="Seafoods"
+                    android:textAlignment="textStart"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/addSeaFood"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="340dp"
+                    android:background="#00FFFFFF"
+                    android:contentDescription="seafoodAdd"
+                    app:srcCompat="@drawable/addnewitem" />
+
+            </FrameLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/sea0"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@drawable/_"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/sea0Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="Baby Yam (±500g)      RM3.80"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/sea1"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/sea1Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege1"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/sea2"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/sea2Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege2"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="210dp">
+
+                        <ImageButton
+                            android:id="@+id/sea3"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:background="#000000"
+                            android:foreground="@android:drawable/ic_menu_help"
+                            android:tint="#000000"
+                            android:verticalScrollbarPosition="defaultPosition" />
+
+                        <Button
+                            android:id="@+id/sea3Txt"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="150dp"
+                            android:text="vege2"
+                            android:textColor="#000000"
+                            android:textColorHighlight="#000000"
+                            android:textColorHint="#FFFFFF"
+                            android:textSize="14sp"
+                            android:verticalScrollbarPosition="defaultPosition"
+                            app:backgroundTint="#00FFFFFF"
+                            app:iconTint="#FFFFFF" />
+                    </FrameLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <Button
+                android:id="@+id/allSeafood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#000091EA"
+                android:drawableStart="@android:drawable/ic_menu_view"
+                android:drawableEnd="@android:drawable/ic_menu_view"
+                android:shadowColor="#00B8D4"
+                android:text="View All Seafoods"
+                android:textColor="#2962FF" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/adminHomeBtn2"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#8CF127"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/adminItemsBtn2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home_btn" />
+
+    <ImageButton
+        android:id="@+id/adminItemsBtn2"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:background="#8CF127"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/adminHomeBtn2"
+        app:srcCompat="@drawable/allitem_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
