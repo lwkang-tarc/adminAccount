@@ -4,13 +4,18 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.squareup.picasso.Picasso
 
 class AdminItems : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_items)
 
+        val babyYam: ImageButton = findViewById(R.id.babyYam)
+        val url:String = "https://media.discordapp.net/attachments/775611195133526060/778294919046758400/unknown.png"
+        Picasso.with(this).load(url).into(babyYam);
         val adminHomeBtn: ImageButton = findViewById(R.id.adminHomeBtn2)
         adminHomeBtn.setOnClickListener{
             val intent = Intent(this, AdminHome::class.java )
